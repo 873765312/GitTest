@@ -18,6 +18,13 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor cyanColor];
+    
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
