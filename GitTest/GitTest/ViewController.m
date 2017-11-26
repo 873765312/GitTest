@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ViewControllerSecond.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,11 @@
     self.view.backgroundColor = [UIColor yellowColor];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    ViewControllerSecond *vc = [[ViewControllerSecond alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
