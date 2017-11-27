@@ -13,22 +13,23 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *arrayList;
 
+
 @end
 
 @implementation ViewControllerSecond
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"第二页";
     self.view.backgroundColor = [UIColor cyanColor];
+
     [self.view addSubview:self.tableView];
-    
-    
+
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
