@@ -24,7 +24,11 @@
     ViewController *vc = [[ViewController alloc] init];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    
+    nav.navigationBar.barTintColor = [UIColor magentaColor];
+    nav.navigationBar.translucent = NO;
+    nav.toolbarHidden = NO;
+    nav.toolbar.barTintColor = [UIColor greenColor];
+    nav.toolbar.translucent = YES;
     self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];

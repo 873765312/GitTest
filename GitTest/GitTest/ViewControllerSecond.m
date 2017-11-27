@@ -19,8 +19,6 @@
     [super viewDidLoad];
     self.title = @"第二页";
     self.view.backgroundColor = [UIColor cyanColor];
-    
-    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
