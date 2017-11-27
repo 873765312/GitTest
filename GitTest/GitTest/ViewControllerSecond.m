@@ -10,13 +10,14 @@
 
 @interface ViewControllerSecond ()
 
+
 @end
 
 @implementation ViewControllerSecond
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"第二页";
     self.view.backgroundColor = [UIColor cyanColor];
     
     
@@ -24,7 +25,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
